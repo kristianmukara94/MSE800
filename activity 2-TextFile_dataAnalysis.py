@@ -1,31 +1,31 @@
-# Create a function to open the filename junk.txt
-with open("junk.txt", "r") as data:
-     content = data.readlines()
-     for line in content:
-# Create a variable to count the lines inside the junk file
-          total_lines =len(content)
-    
-# Print the total number of lines inside the junk file          
-          print(content)
-          print ("Total number of lines:", total_lines)
-data.close()     
+class DataAnalysisJunkFile:
 
-# Create a function to open the junk file and then write data inside the txt
-with open("junk.txt", "a") as writedata:
-     writedata.write("\n`text file nanalyssis`\n")
-writedata.close()
+    def __init__(self, filename="junk.txt"):
+        self.filename = filename
 
-# Create a function to read the junk file 
-with open("junk.txt", "r") as data2:
-     convert = data2.read()
-data2.close()
+    def count_lines(self):
+        with open(self.filename, "r") as data:
+            content = data.readlines()
 
-# Create a function to convert all data to lowercase
-with open("junk.txt", "w") as convertdata:
-     convertdata.write(convert.lower())
-convertdata.close()
+        total_lines = len(content)
+        print("Total number of lines:", total_lines)
+
+    def write_data(self):
+        with open(self.filename, "a") as data:
+            data.write("\ntext file analysis\n")
+
+    def convert_to_lowercase(self):
+        with open(self.filename, "r") as data:
+            content = data.read()
+
+        with open(self.filename, "w") as data:
+            data.write(content.lower())
 
 
+# Create object
+data_analysis = DataAnalysisJunkFile()
 
-
-    
+# Call methods
+data_analysis.count_lines()
+data_analysis.write_data()
+data_analysis.convert_to_lowercase()

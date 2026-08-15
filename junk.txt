@@ -19,8 +19,4 @@ test record 02
 
 end of junk data.
 
-`text file nanalyssis`
-
-`text file nanalyssis`
-
-`text file nanalyssis`
+text file analysis
