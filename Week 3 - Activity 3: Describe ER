@@ -1,0 +1,13 @@
+The flowchart is all about school course and student management system . The student has information such as student number, name , NID and birthdate. The student can enroll into courses and each enrollment records has details about enrollment date, course name , and CC number. Lectures are also associated with the subjects and contains information such as lecture name, date, time and subject. The system connects student, their enrollments , lectures and subjects.
+
+- ADDITIONAL ATTRIBUTES  
+  Student: Email, Phone_number
+  Enrollment: Enrollment_status (Active or Withdrawn)
+  Lecture: Room_number
+  Subjects: Subject_description
+
+Types of relationships
+
+Student - Enrolls - Enrollment: One to many (Student can have many enrollment records, while each enrollment record is belongs to student)
+Enrollment - Lecture: Many to one (Enrollment records can be associated with lecture and course, while each enrollment is associated with a particular lecture.
+Lecturer - Lectures - Subjects: Many to Many (One lecturer can teach many subjects, and one subject can be teach by several lecturers. The lectures connects lecturers with the subjects they teach.
