@@ -1,4 +1,4 @@
-# Matrix Multiplication - simple OOP implementation
+# Week 5 - Activity 3: Matrix data structure
 
 class Matrix:
     def __init__(self, data):
