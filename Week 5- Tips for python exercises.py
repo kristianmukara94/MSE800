@@ -14,7 +14,7 @@ print("1. Flattened matrix:", flattened)
 grades = [88, 92, 78, 65, 50, 94]
 updated_grades = [g + 10 if i == 4 else g + 5 for i, g in enumerate(grades)]
 print("3. Updated grades:", updated_grades)
-
+    
 # 4. filter out elements depend on their index: 
 #    use list comprehension and enumerate() to get elements with even index 
 data2 = [100, 200, 300, 400, 500]
