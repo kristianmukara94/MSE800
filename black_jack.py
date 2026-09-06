@@ -4,7 +4,7 @@ import random
 CARDS = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 
-def deal_card(): 
+def deal_card():
     """Return a random card from the deck."""
     return random.choice(CARDS)
 
@@ -29,9 +29,9 @@ def calculate_score(cards):
 def compare(user_score, computer_score):
     """Compare the scores and return the game result."""
     if user_score > 21:
-        return "You lose."
+        return "You went over. You lose."
     if computer_score > 21:
-        return "You win."
+        return "Computer went over. You win."
     if user_score == computer_score:
         return "Draw."
     if user_score == 0:
@@ -44,7 +44,7 @@ def compare(user_score, computer_score):
 
 
 def play_game():
-    """Run Blackjack game."""
+    """Run one complete Blackjack game."""
     # Deal two cards to the player and the computer.
     user_cards = [deal_card(), deal_card()]
     computer_cards = [deal_card(), deal_card()]
